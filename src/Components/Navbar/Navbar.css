@@ -1,0 +1,30 @@
+#Navbar{
+    top:0px;
+    position: relative;
+    left:0px;
+    right:0px;
+    background-color: #33aeff;
+    color: whitesmoke;
+    display: grid;
+    grid-template-areas: "logo title drawer";
+    grid-template-columns: 100px auto 100px;
+    box-shadow: 0 0 10px #33aeff;
+    /* TO be Changed */
+    padding: 15px;
+}
+#logo{
+    grid-area:logo;
+}
+#title{
+    grid-area:title;
+}
+#drawer{
+    grid-area: drawer;
+}
+.elem{
+    user-select: none;
+    cursor: pointer;
+}
+.elem:active{
+    color:#a7a7a7;
+}

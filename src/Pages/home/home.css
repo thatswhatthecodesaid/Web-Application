@@ -1,0 +1,75 @@
+.homecontainer{
+    padding:10px;
+}
+.rooms{
+   display: inline-flex;
+   flex: 0 0 25em;
+}
+.room{
+    padding:10px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+
+  }
+
+  @media (min-width: 40rem) {
+    .cards {
+      width: 50%;
+    }
+  }
+  @media (min-width: 56rem) {
+    .cards {
+      width: 33.3%;
+    }
+  }
+  .cards .card-item {
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+  }
+
+  .card-item:nth-child(odd){
+    color: whitesmoke;
+    background-color: cornflowerblue;
+  }
+  .cards .card-item:active {
+    cursor: pointer;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transition-duration: 0.5s;
+  }
+  .cards .card-item:hover .card-image {
+    opacity: 1;
+  }
+  .cards .card-info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    line-height: 1.5em;
+  }
+  .cards .card-title {
+    font-size: 25px;
+    line-height: 1.1em;
+    color: #32325d;
+    margin-bottom: 0.2em;
+  }
+  .cards .card-image {
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px 6px 0px 0px;
+    opacity: 0.91;
+  }
+  
